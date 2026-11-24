@@ -1,10 +1,149 @@
-TradeKit Pro
-Your smart trading learning platform
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TradeKit Pro — a beginner-friendly place to learn forex trading, practise on demo, and understand risk management.">
+  <title>TradeKit Pro | Learn. Practise. Improve.</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #121e30;
+      --panel2: #18283d;
+      --text: #f4f7fb;
+      --muted: #b5c2d3;
+      --green: #35d49a;
+      --blue: #76a9ff;
+      --line: rgba(255,255,255,.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: Arial, Helvetica, sans-serif;
+      color: var(--text); background: radial-gradient(circle at top right, #173653 0, var(--bg) 42%);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1100px, 92%); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 5;
+      background: rgba(8,16,29,.94); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { font-size: 1.35rem; font-weight: 800; letter-spacing: .3px; color: var(--green); text-decoration: none; }
+    .navlinks { display: flex; gap: 20px; flex-wrap: wrap; }
+    .navlinks a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+    .navlinks a:hover { color: var(--green); }
+    .hero { padding: 78px 0 58px; text-align: center; }
+    .eyebrow { color: var(--green); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: .8rem; }
+    h1 { font-size: clamp(2.2rem, 7vw, 4.3rem); line-height: 1.08; margin: 14px 0; }
+    .hero p { max-width: 680px; margin: 0 auto; color: var(--muted); font-size: 1.12rem; }
+    .actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn { display: inline-block; padding: 12px 20px; border-radius: 9px; text-decoration: none; font-weight: 700; border: 1px solid var(--green); }
+    .btn.primary { background: var(--green); color: #062016; }
+    .btn.secondary { color: var(--green); }
+    section { padding: 48px 0; }
+    .section-title { text-align: center; margin: 0 0 10px; font-size: 2rem; }
+    .section-intro { text-align: center; color: var(--muted); max-width: 650px; margin: 0 auto 28px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: linear-gradient(145deg, var(--panel2), var(--panel)); border: 1px solid var(--line); border-radius: 15px; padding: 23px; }
+    .card .icon { font-size: 1.8rem; }
+    .card h3 { margin: 9px 0 7px; }
+    .card p { color: var(--muted); margin: 0; }
+    .steps { counter-reset: step; }
+    .step { position: relative; padding-left: 58px; margin: 18px 0; }
+    .step:before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 0; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--green); color: #062016; font-weight: 800; }
+    .notice { background: #18283d; border-left: 4px solid var(--blue); padding: 18px 20px; border-radius: 8px; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding: 26px 0; color: var(--muted); text-align: center; font-size: .9rem; }
+    @media (max-width: 760px) {
+      .nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      .navlinks { gap: 13px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 55px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#">TradeKit Pro</a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#learn">Learn</a>
+        <a href="#practice">Practice</a>
+        <a href="#safety">Trading safety</a>
+      </nav>
+    </div>
+  </header>
 
-Welcome Trader!
-Learn forex trading step by step.
+  <main>
+    <div class="wrap hero">
+      <div class="eyebrow">Your trading learning journey starts here</div>
+      <h1>Learn. Practise.<br><span style="color:var(--green)">Improve.</span></h1>
+      <p>Welcome to TradeKit Pro — a beginner-friendly learning space to understand forex basics, practise with a demo account, and build responsible trading habits.</p>
+      <div class="actions">
+        <a class="btn primary" href="#learn">Get started</a>
+        <a class="btn secondary" href="#safety">Learn about risk</a>
+      </div>
+    </div>
 
-Practice safely using a demo account.
+    <section id="learn">
+      <div class="wrap">
+        <h2 class="section-title">Start with the basics</h2>
+        <p class="section-intro">Take your time. Learn one topic at a time before risking real money.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">📘</div>
+            <h3>Forex fundamentals</h3>
+            <p>Understand currency pairs, pips, spreads, leverage, and how the forex market works.</p>
+          </article>
+          <article class="card">
+            <div class="icon">📊</div>
+            <h3>Reading charts</h3>
+            <p>Learn what candles, trends, support, and resistance can tell you about price movement.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🧭</div>
+            <h3>Build a plan</h3>
+            <p>Practise setting entry ideas, stop-loss levels, and take-profit targets before a trade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-Get Started
-Learn • Practice • Improve
+    <section id="practice">
+      <div class="wrap">
+        <h2 class="section-title">Practise step by step</h2>
+        <p class="section-intro">A demo account lets you learn how a trading platform works without depositing real money.</p>
+        <div class="card steps">
+          <div class="step"><strong>Learn the platform.</strong><br><span style="color:var(--muted)">Find the chart, market watch, order window, and account balance.</span></div>
+          <div class="step"><strong>Try a demo trade.</strong><br><span style="color:var(--muted)">Practise opening and closing a small simulated position.</span></div>
+          <div class="step"><strong>Review your decisions.</strong><br><span style="color:var(--muted)">Write down why you entered, where your stop-loss was, and what you learned.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="safety">
+      <div class="wrap">
+        <h2 class="section-title">Trade responsibly</h2>
+        <p class="section-intro">Trading involves risk. There are no guaranteed profits, and you can lose money.</p>
+        <div class="notice">
+          <strong style="color:var(--text)">Important safety reminders</strong>
+          <ul>
+            <li>Practise on demo before considering a real account.</li>
+            <li>Never trade money you cannot afford to lose.</li>
+            <li>Avoid borrowing money to trade or using high leverage.</li>
+            <li>Use risk controls and understand every trade before placing it.</li>
+            <li>Be careful of anyone promising guaranteed profits or asking for your password.</li>
+          </ul>
+          <strong style="color:var(--text)">Education only:</strong> TradeKit Pro provides general learning information, not financial advice or trade signals.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 TradeKit Pro · Learn trading responsibly.</div>
+  </footer>
+</body>
+</html>
